@@ -18,7 +18,7 @@ function Dashboard() {
   };
 
   const handleLogout = () => {
-    navigate('/login');
+    navigate('/');
   };
 
   return (

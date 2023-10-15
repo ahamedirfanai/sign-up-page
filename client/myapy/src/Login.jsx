@@ -37,7 +37,7 @@ function Login() {
       return;
     }
 
-    axios.post('http://localhost:3001/login', user)
+    axios.post('https://signup-page-k377.onrender.com/login', user)
       .then(result => {
         console.log(result);
         if (result.data === "success") {
@@ -96,7 +96,7 @@ function Login() {
             Log In
           </button>
           <p>Don't have an account?</p>
-          <Link to="/register" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
+          <Link to="/" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
             Register
           </Link>
         </form>

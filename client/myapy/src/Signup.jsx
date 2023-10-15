@@ -51,7 +51,7 @@ function Signup() {
       setPasswordMismatch(false);
     }
 
-    axios.post('http://localhost:3001/register', user)
+    axios.post('https://signup-page-k377.onrender.com/register', user)
       .then(result => console.log(result))
       .catch(err => console.log(err));
       navigate("/Login")
@@ -133,7 +133,7 @@ function Signup() {
             Register
           </button>
           <p>Already Have an account</p>
-          <Link to="/login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
+          <Link to="/Login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
             Login
           </Link>
         </form>
